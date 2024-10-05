@@ -3,11 +3,9 @@ module.exports = {
   darkMode: ["class"],
   content: [
     './index.html',
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
     './src/**/*.{js,ts,jsx,tsx}',
-	],
+    './components/**/*.{js,ts,jsx,tsx}'
+  ],
   theme: {
     container: {
       center: true,
@@ -17,6 +15,11 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'], // Default main text font
+        label: ['AvenirNextCondensed', 'sans-serif'], // Label font for product names
+        serif: ['Source Serif Pro', 'serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

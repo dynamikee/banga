@@ -1,21 +1,37 @@
 import React from 'react';
-import './index.css';
-import { Button } from './components/ui/button';
+import Hero from './components/hero'; // Import the Hero component
+import TextAction from './components/text-action';
+import ProductOverview from './components/product-overview'
+import ImageGrid from './components/image-grid'
 
 function App() {
   return (
-    <div className="p-10 bg-gray-100 min-h-screen">
-      <h1 className="text-4xl font-bold text-blue-500">Välkommen till din webbsida!</h1>
-      <Button variant="default" className="mt-4">Klicka här</Button>
-      <Button variant="default" className="bg-red-500 text-white mt-4">
-  Klicka här
-</Button>
-      <div className="bg-red-500 text-white p-4">Fungerar Tailwind här?</div>
-      <div className="bg-blue-500 text-white p-4">
-  Detta är en test av Tailwind
-</div>
-
-    </div>
+    <>
+      <Hero />
+      <TextAction 
+        title="Get Handmade Craftsmanship" 
+        text="Discover handcrafted products made from natural materials. Our collection combines traditional craftsmanship with modern functionality to create beautiful, timeless pieces for your home."
+        buttonText="Shop Now"
+      />
+      <ProductOverview />
+      <ImageGrid
+  images={[
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/banga-site.appspot.com/o/Ma%CC%88ssing.jpg?alt=media&token=857e6b4f-9b1e-4188-bbdb-c3979b402405",
+      alt: "Large Image Description",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/banga-site.appspot.com/o/DSCF4204.jpg?alt=media&token=2e929251-38b2-4b0e-93eb-6d9a11a22e9e",
+      alt: "Small Image 1",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/banga-site.appspot.com/o/DSCF4871.jpg?alt=media&token=5a3e4f27-b3d4-4338-97e0-45ec19f5418c",
+      alt: "Small Image 2",
+    }
+  ]}
+  tallImageOnLeft={true}
+/>
+    </>
   );
 }
 
