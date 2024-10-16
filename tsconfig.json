@@ -7,9 +7,12 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",  // Lägg till detta
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/@/*"]
+      "@/*": ["src/@/*"],
+      "@components/*": ["src/components/*"],  // Lägg till eventuella andra alias du använder
+      "@lib/*": ["src/lib/*"]                  // Exempel på ett annat alias
     }
   },
   "include": ["src"]

@@ -15,7 +15,7 @@ const TextAction: React.FC<TextActionProps> = ({ title, text, buttonText }) => {
         <p className="text-lg text-gray-600 leading-relaxed mb-8">{text}</p>
         {/* Add mailto link here */}
         <a href="mailto:hi@bangahantverk.com">
-          <Button type="primary">{buttonText}</Button>
+          <Button type="button">{buttonText}</Button>
         </a>
       </div>
     </div>

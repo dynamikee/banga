@@ -6,7 +6,6 @@ import ImageGrid from './components/image-grid'
 import ContentFeature from './components/content-feature'
 import SquareImageGrid from './components/square-image-grid'
 import ProductPresentation from './components/product'
-import ProductMenu from './components/product-menu'
 import Footer from './components/footer'
 
 function App() {
@@ -36,7 +35,6 @@ function App() {
             alt: "Small Image 2",
           }
         ]}
-        tallImageOnLeft={true}
       />
 
       {/* Content Feature */}
@@ -127,7 +125,7 @@ Den obehandlade ytan låter materialets naturliga skönhet komma fram, där tide
 <section id="rund-knopp"/>
 <ProductPresentation 
   images={[
-    { src: "https://firebasestorage.googleapis.com/v0/b/banga-site.appspot.com/o/IMG_0150.jpg?alt=media&token=439f934a-2c0f-4578-8a9d-d2a7b0f2e8dd", alt: "Round knob Image 1" },
+    { src: "https://firebasestorage.googleapis.com/v0/b/banga-site.appspot.com/o/IMG_0150.jpg?alt=media&token=424a7bb7-8cf8-43ea-b6bf-08fafa3d6259", alt: "Round knob Image 1" },
     { src: "https://firebasestorage.googleapis.com/v0/b/banga-site.appspot.com/o/IMG_0105.jpg?alt=media&token=35a52b8b-6e5e-4efb-b3e8-319508a336ac", alt: "Round knob Image 2" },
   ]}
   productName="Rund knopp"
@@ -177,7 +175,6 @@ Den obehandlade ytan låter materialets naturliga skönhet komma fram, där tide
             alt: "Gjuteriet",
           }
         ]}
-        tallImageOnLeft={true}
       />
 
 

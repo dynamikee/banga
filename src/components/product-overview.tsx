@@ -2,7 +2,7 @@ import React from 'react';
 import { AspectRatio } from '@components/ui/aspect-ratio';
 
 const ProductOverview = () => {
-  const handleScroll = (id) => {
+  const handleScroll = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
@@ -24,7 +24,7 @@ const ProductOverview = () => {
       id: "oval-knopp",
     },
     {
-      src: "https://firebasestorage.googleapis.com/v0/b/banga-site.appspot.com/o/IMG_0150.jpg?alt=media&token=439f934a-2c0f-4578-8a9d-d2a7b0f2e8dd",
+      src: "https://firebasestorage.googleapis.com/v0/b/banga-site.appspot.com/o/IMG_0150.jpg?alt=media&token=424a7bb7-8cf8-43ea-b6bf-08fafa3d6259",
       alt: "Rund knopp",
       title: "Rund knopp",
       id: "rund-knopp",
