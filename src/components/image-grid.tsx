@@ -7,20 +7,33 @@ const ImageGrid = ({ images }) => {
   // Function to update the height
   const updateHeight = () => {
     const img = document.getElementById('left-image');
-    if (img) {
+    if (img && img.complete) { // Ensure the image is fully loaded
       setLeftImageHeight(img.clientHeight);
     }
   };
 
   // Effect to update the left image's height dynamically when the image loads
   useEffect(() => {
-    updateHeight();
+    const img = document.getElementById('left-image');
+
+    if (img) {
+      if (img.complete) {
+        // Image already loaded
+        updateHeight();
+      } else {
+        // Add an event listener to wait for the image to fully load
+        img.addEventListener('load', updateHeight);
+      }
+    }
 
     // Add event listener for window resize
     window.addEventListener('resize', updateHeight);
 
-    // Cleanup the event listener when the component unmounts
+    // Cleanup the event listeners when the component unmounts
     return () => {
+      if (img) {
+        img.removeEventListener('load', updateHeight);
+      }
       window.removeEventListener('resize', updateHeight);
     };
   }, []);

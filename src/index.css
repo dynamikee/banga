@@ -7,12 +7,48 @@
   src: url('/path-to-your-font/AvenirNextCondensed-DemiBold.ttf') format('truetype');
 }
 
-.label {
+.font-avenir {
   font-family: 'Avenir Next Condensed', sans-serif;
-  font-weight: 600; /* Demi Bold */
+}
+
+.label-large {
+  font-family: 'Avenir Next Condensed', sans-serif;
+  font-weight: 540; /* Demi Bold */
   font-size: 20px;
   letter-spacing: 2px;
+    text-transform: uppercase;
 }
+
+.label-small-prominent {
+  font-family: 'Avenir Next Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 540; /* Demi Bold */
+  text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.label-small {
+  font-family: 'Avenir Next Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+
+.custom-quote {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.5rem;  /* Adjust as needed */
+  font-style: normal; /* Keeps the italic style */
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999; /* Ensure it stays on top of other content */
+  background-color: white;
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
