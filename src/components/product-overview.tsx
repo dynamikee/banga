@@ -52,7 +52,7 @@ const ProductOverview = () => {
                     className="w-full h-full object-cover" /* Ensures the image fills the container */
                   />
                 </AspectRatio>
-                <p className="mt-4 text-sm font-semibold">
+                <p className="label-small-prominent mt-4">
                   {product.title}
                 </p>
               </button>

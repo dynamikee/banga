@@ -22,7 +22,7 @@ const ProductOverview = () => {
             id: "oval-knopp",
         },
         {
-            src: "https://firebasestorage.googleapis.com/v0/b/banga-site.appspot.com/o/IMG_0150.jpg?alt=media&token=439f934a-2c0f-4578-8a9f-d2a7b0f2e8dd",
+            src: "https://firebasestorage.googleapis.com/v0/b/banga-site.appspot.com/o/IMG_0150.jpg?alt=media&token=424a7bb7-8cf8-43ea-b6bf-08fafa3d6259",
             alt: "Rund knopp",
             title: "Rund knopp",
             id: "rund-knopp",
@@ -44,6 +44,6 @@ const ProductOverview = () => {
                         React.createElement(AspectRatio, { ratio: 1 / 1 },
                             " ",
                             React.createElement("img", { src: product.src, alt: product.alt, className: "w-full h-full object-cover" /* Ensures the image fills the container */ })),
-                        React.createElement("p", { className: "mt-4 text-sm font-semibold" }, product.title)))))))));
+                        React.createElement("p", { className: "label-small-prominent mt-4" }, product.title)))))))));
 };
 export default ProductOverview;

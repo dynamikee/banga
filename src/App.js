@@ -65,7 +65,7 @@ function App() {
             ] }),
         React.createElement("section", { id: "rund-knopp" }),
         React.createElement(ProductPresentation, { images: [
-                { src: "https://firebasestorage.googleapis.com/v0/b/banga-site.appspot.com/o/IMG_0150.jpg?alt=media&token=439f934a-2c0f-4578-8a9d-d2a7b0f2e8dd", alt: "Round knob Image 1" },
+                { src: "https://firebasestorage.googleapis.com/v0/b/banga-site.appspot.com/o/IMG_0150.jpg?alt=media&token=424a7bb7-8cf8-43ea-b6bf-08fafa3d6259", alt: "Round knob Image 1" },
                 { src: "https://firebasestorage.googleapis.com/v0/b/banga-site.appspot.com/o/IMG_0105.jpg?alt=media&token=35a52b8b-6e5e-4efb-b3e8-319508a336ac", alt: "Round knob Image 2" },
             ], productName: "Rund knopp", price: "480 kr", description: "Den runda knoppen \u00E4r inspirerad av klassiska former med mjuka linjer och en symmetrisk design som skapar en k\u00E4nsla av balans och harmoni. Tillverkad f\u00F6r hand i sm\u00E5 serier, \u00E4r denna knopp en tidl\u00F6s detalj som bara blir vackrare med \u00E5ren. Finns i obehandlad m\u00E4ssing, tenn och brons \u2013 material som \u00E5ldras naturligt och ger varje knopp en unik patina. Passar perfekt f\u00F6r den som vill bevara eller f\u00F6rh\u00F6ja en rustik och klassisk k\u00E4nsla.", details: [
                 { label: 'Diameter', value: '~ 32 mm' },
