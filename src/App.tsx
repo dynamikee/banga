@@ -14,7 +14,7 @@ function App() {
       <Hero />
       <TextAction 
         title="Det goda hantverket" 
-        text="Vi värnar om det traditionella hantverket och tillverkar tidlösa, historiska knoppar och handtag som kommer att älskas av generationer. Vi tror på småskalig produktion - fri från ytbehandlingar och kemiska processer - där kvalitet får ta tid med omtanke om både människor och miljö."
+        text="Vi värnar om det traditionella hantverket och tillverkar tidlösa knoppar och handtag som kommer att älskas av generationer. Vi tror på småskalig produktion - fri från ytbehandlingar och kemiska processer - där kvalitet får ta tid med omtanke om både människor och miljö."
         buttonText="Kontakta oss"
       />
       <ProductOverview />
@@ -53,19 +53,19 @@ function App() {
       />
 
       <ContentFeature 
-        headline="Skapade för att älskas i generationer" 
+        headline="För kommande generationer" 
         text="Våra handtag och knoppar är skapade för att följa med genom livet. Deras skönhet växer med tiden, där varje dag av användning ger dem mer karaktär och liv. Vi låter materialen åldras naturligt, och istället för att se på det som något negativt, hyllar vi det som ett bevis på tidens gång. <br><br> Med åren får varje föremål en patina som berättar en egen historia – formad av platsen och människorna som använt det. Det är detta som ger våra produkter ett känslomässigt värde, långt bortom deras praktiska användning. När du håller i våra handtag, håller du i något som skapats för att vara med dig länge och bli en del av ditt hem och din historia."
         imageSrc="https://firebasestorage.googleapis.com/v0/b/banga-site.appspot.com/o/Ma%CC%88ssing.jpg?alt=media&token=f09539e4-3880-4b18-b948-04f6062c0488"
       />
       <ContentFeature 
-        headline="Endast på beställning, minskat slöseri" 
+        headline="Beställningsvaror utan slöseri"
         text="Vi utmanar traditionella konsumtionsmönster och produktionsmetoder genom att endast tillverka på beställning. Det gör att vi kan undvika överproduktion och onödigt slöseri med resurser. Genom att fokusera på kvalitet framför kvantitet bidrar vi till ett mer hållbart sätt att tänka kring konsumtion – där varje föremål är tänkt att hålla, användas och älskas över tid.<br><br>
 
 Eftersom vi inte lagerför varor och varje handtag och knopp gjuts på beställning, har vi en leveranstid på 4–6 veckor. Denna process gör att vi kan vara noggranna med både materialval och tillverkning, samtidigt som vi minimerar onödig produktion och resursanvändning."
         imageSrc="https://firebasestorage.googleapis.com/v0/b/banga-site.appspot.com/o/DSCF6961.jpg?alt=media&token=0cf75bb2-b8d4-4b46-97b7-6efc37b14ff7"
       />
 
-<h2 className="text-4xl font-serif text-gray-800 text-center mt-20">Tenn - nytt material</h2>
+<h2 className="text-4xl font-serif text-gray-800 text-center mt-20">Nu också i tenn</h2>
       {/* Square Image Grid */}
       <SquareImageGrid
         images={[
@@ -93,10 +93,10 @@ Eftersom vi inte lagerför varor och varje handtag och knopp gjuts på beställn
 
 Den obehandlade ytan låter materialets naturliga skönhet komma fram, där tidens gång tillför en patina som gradvis fördjupar dess utseende och känsla. Ett handtag för dig som uppskattar gedigna klassiska former och genuint hantverk."
   details={[
-    { label: 'Längd', value: '95 mm' },
-    { label: 'Material', value: 'Solid mässing, tenn eller brons' },
-    { label: 'Ytskikt', value: 'Polerad, obehandlad, fritt från kemiska processer' },
-    { label: 'Mått', value: '95 D x 20 H mm' },
+    { label: 'Bredd', value: '95 mm' },
+    { label: 'Material', value: 'Återvunnen mässing, tenn eller brons' },
+    { label: 'Ytskikt', value: 'Obehandlat, fritt från kemiska processer' },
+    { label: 'Mått', value: '95Lx20D mm' },
     { label: 'Vikt', value: 'ca 150g' },
     { label: 'Skruvar', value: '3.5mm träskruv inkluderad' }
   ]}
@@ -116,7 +116,7 @@ Den obehandlade ytan låter materialets naturliga skönhet komma fram, där tide
   details={[
     { label: 'Material', value: 'Återvunnen mässing, tenn eller brons' },
     { label: 'Ytskikt', value: 'Obehandlat, fritt från kemiska processer' },
-    { label: 'Mått', value: '34 D x 26 W x 44 H mm' },
+    { label: 'Mått', value: '34Dx26Bx44L mm' },
     { label: 'Vikt', value: 'ca 115g' },
     { label: 'Skruvar', value: 'M4 skruv inkluderad' }
   ]}
@@ -135,7 +135,7 @@ Den obehandlade ytan låter materialets naturliga skönhet komma fram, där tide
     { label: 'Diameter', value: '~ 32 mm' },
     { label: 'Material', value: 'Återvunnen mässing, tenn eller brons' },
     { label: 'Ytskikt', value: 'Obehandlat, fritt från kemiska processer' },
-    { label: 'Mått', value: '~ ⌀ 32 x 30 D mm' },
+    { label: 'Mått', value: '~ ⌀32xD30 mm' },
     { label: 'Vikt', value: '~ 105g' },
     { label: 'Skruvar', value: 'M4 skruv inkluderad' }
   ]}
@@ -154,7 +154,7 @@ Den obehandlade ytan låter materialets naturliga skönhet komma fram, där tide
     { label: 'Längd', value: '~ 221 mm' },
     { label: 'Material', value: 'Återvunnen mässing, tenn eller brons' },
     { label: 'Ytskikt', value: 'Obehandlat, fritt från kemiska processer' },
-    { label: 'Mått', value: '~ L 221 x D 31 x B 20 mm' },
+    { label: 'Mått', value: '~ L221xD31xB20 mm' },
     { label: 'Vikt', value: '~ 200g' },
     { label: 'Skruvar', value: '3.5mm träskruv inkluderad' }
   ]}

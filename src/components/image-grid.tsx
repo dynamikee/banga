@@ -11,11 +11,19 @@ interface ImageGridProps {
 
 const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
   const [leftImageHeight, setLeftImageHeight] = useState<number>(0);
+  const [spacing, setSpacing] = useState<number>(8); // Default spacing for small screens
 
   const updateHeight = () => {
     const img = document.getElementById('left-image') as HTMLImageElement;
     if (img && img.complete) {
       setLeftImageHeight(img.clientHeight);
+    }
+
+    // Set spacing based on screen width (breakpoints)
+    if (window.innerWidth >= 768) {
+      setSpacing(16); // 16px for larger screens
+    } else {
+      setSpacing(8);  // 8px for smaller screens
     }
   };
 
@@ -39,7 +47,8 @@ const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
   }, []);
 
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-2" style={{ gap: `${spacing}px` }}> {/* Set gap dynamically */}
+      {/* Left image */}
       <div className="col-span-1">
         <img
           id="left-image"
@@ -48,9 +57,16 @@ const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
           className="w-full h-auto object-cover"
         />
       </div>
-      <div className="col-span-1 grid grid-rows-2 gap-4">
+
+      {/* Right images */}
+      <div className="col-span-1 grid grid-rows-2" style={{ gap: `${spacing}px` }}> {/* Dynamically set row gap */}
         {images.slice(1).map((image, index) => (
-          <div key={index} style={{ height: leftImageHeight / 2 - 8 }}>
+          <div
+            key={index}
+            style={{
+              height: `calc(${leftImageHeight / 2}px - ${spacing / 2}px)` // Adjust height based on spacing
+            }}
+          >
             <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
           </div>
         ))}

@@ -7,13 +7,14 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",  // Lägg till detta
+    "moduleResolution": "node",
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/@/*"],
-      "@components/*": ["src/components/*"],  // Lägg till eventuella andra alias du använder
-      "@lib/*": ["src/lib/*"]                  // Exempel på ett annat alias
-    }
+      "@components/*": ["src/components/*"],
+      "@lib/*": ["src/lib/*"]
+    },
+    "outDir": "./dist"  // Add this line to ensure output goes to the dist folder
   },
   "include": ["src"]
 }

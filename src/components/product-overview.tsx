@@ -41,7 +41,7 @@ const ProductOverview = () => {
     <div className="py-20">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-4xl font-serif text-gray-800 mb-10 text-center">Våra produkter</h2>
-        <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-4 gap-4"> {/* Consistent 16px gap */}
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4"> {/* Consistent 16px gap */}
           {products.map((product, index) => (
             <div key={index} className="text-center">
               <button onClick={() => handleScroll(product.id)} className="w-full">

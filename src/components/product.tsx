@@ -20,7 +20,7 @@ const ProductPresentation: React.FC<ProductPresentationProps> = ({ images, produ
       {/* Strecket över går hela vägen */}
       <div className="col-span-1">
         <hr className="border-t border-black mb-6" /> {/* Strecket går hela vägen */}
-        <div className="pl-4">  {/* Indrag med 16px för produktnamn, beskrivning och pris */}
+        <div className="pl-4 pr-4">  {/* Indrag med 16px på både vänster och höger */}
           <h2 className="label-large text-xl mb-2">{productName}</h2>
           <div
             className="text-sm leading-relaxed mb-4"
@@ -43,7 +43,7 @@ const ProductPresentation: React.FC<ProductPresentationProps> = ({ images, produ
       </div>
 
       {/* Flyttar in tabellen med 16px */}
-      <div className="col-span-1 pl-4">  {/* Indrag med 16px för tabellen */}
+      <div className="col-span-1 pl-4 pr-4">  {/* Indrag med 16px på både vänster och höger */}
         <table className="w-full border-collapse">
           <tbody>
             {details.map((detail, index) => (

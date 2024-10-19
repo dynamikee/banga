@@ -11,7 +11,7 @@ const ContentFeature: React.FC<ContentFeatureProps> = ({ headline, text, imageSr
   return (
     <div className="py-20">
       {/* Headline spanning the full width with Source Serif 4 style */}
-      <h2 className="text-4xl font-serif text-center w-full mb-10">{headline}</h2>
+      <h2 className="text-4xl font-serif text-center w-full mb-10 px-4">{headline}</h2>
       
       {/* Container for the section */}
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-start gap-12">
@@ -26,7 +26,7 @@ const ContentFeature: React.FC<ContentFeatureProps> = ({ headline, text, imageSr
         </div>
 
         {/* Text content on the right */}
-        <div className="w-full md:w-1/2 text-left space-y-6">
+        <div className="w-full md:w-1/2 text-left space-y-6 pr-4">
           <p 
             className="text-lg text-gray-600 leading-relaxed"
             dangerouslySetInnerHTML={{ __html: text }} // Renders HTML inside the text
