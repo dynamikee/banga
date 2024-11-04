@@ -3,18 +3,20 @@ import Hero from './components/hero';
 import TextAction from './components/text-action';
 import ProductOverview from './components/product-overview'
 import ImageGrid from './components/image-grid'
+import ImageGridViewport from './components/image-grid-viewport'
 import ContentFeature from './components/content-feature'
+import ContentFeatureRight from './components/content-feature-right'
 import SquareImageGrid from './components/square-image-grid'
 import ProductPresentation from './components/product'
 import Footer from './components/footer'
 
 function App() {
   return (
-    <>
+    <main className="max-w-[1920px] mx-auto">
       <Hero />
       <TextAction 
         title="Det goda hantverket" 
-        text="Vi värnar om det traditionella hantverket och tillverkar tidlösa knoppar och handtag som kommer att älskas av generationer. Vi tror på småskalig produktion - fri från ytbehandlingar och kemiska processer - där kvalitet får ta tid med omtanke om både människor och miljö."
+        text="Vi värnar om det traditionella hantverket och tillverkar tidlösa knoppar och handtag som kommer älskas i generationer. Vi tror på småskalig produktion - fri från ytbehandlingar och kemiska processer - där kvalitet får ta tid med omtanke om både människor och miljö."
         buttonText="Kontakta oss"
       />
       <ProductOverview />
@@ -46,18 +48,37 @@ function App() {
         imageSrc="https://firebasestorage.googleapis.com/v0/b/banga-site.appspot.com/o/Ba%CC%8Anga%CC%8A%20hantverk%20produkt-40.jpg?alt=media&token=d2372001-9cc9-4d8e-9098-0848acecac1d"
       />
 
-      <ContentFeature 
+      <ContentFeatureRight 
         headline="Lokalt återbruk" 
         text="För oss är det ett måste att ta vara på de resurser som redan finns och ge dem ett nytt liv. Att arbeta med återvunnet material kräver tid och omsorg, både i att hitta och välja ut rätt material för varje gjutning, eftersom återvunnet material varierar mer. Men just detta ger också varje gjutning sin egen karaktär och historia. <br><br>Vi använder enbart metall som vi återvinner här på Gotland. Genom att arbeta lokalt undviker vi mellanhänder och långa transportsträckor, som ofta är en stor del av problemet med återvunnen metall på marknaden. När vi har kontroll över hela kedjan, från återvinning till färdig produkt, kan vi garantera att varje handtag tillverkas på ett hållbart sätt, med en djupare koppling till platsen där varje föremål tar form."
         imageSrc="https://firebasestorage.googleapis.com/v0/b/banga-site.appspot.com/o/tempImageaOSNG3.jpg?alt=media&token=83ff1ae1-2d16-49c5-9386-502eea06462f"
       />
+
+      {/* Image Grid */}
+      <ImageGrid
+        images={[
+          {
+            src: "https://firebasestorage.googleapis.com/v0/b/banga-site.appspot.com/o/IMG_6766.JPG?alt=media&token=ea623bca-4d15-4374-8716-09862a7e757e",
+            alt: "Large Image Description",
+          },
+          {
+            src: "https://firebasestorage.googleapis.com/v0/b/banga-site.appspot.com/o/IMG_3366.JPG?alt=media&token=78048a88-edc0-430c-84ba-5440d681cd02",
+            alt: "Small Image 1",
+          },
+          {
+            src: "https://firebasestorage.googleapis.com/v0/b/banga-site.appspot.com/o/DSCF8430.JPG?alt=media&token=7d2f3642-9f73-4d17-ba49-04755cb3f971",
+            alt: "Small Image 2",
+          }
+        ]}
+      />
+
 
       <ContentFeature 
         headline="För kommande generationer" 
         text="Våra handtag och knoppar är skapade för att följa med genom livet. Deras skönhet växer med tiden, där varje dag av användning ger dem mer karaktär och liv. Vi låter materialen åldras naturligt, och istället för att se på det som något negativt, hyllar vi det som ett bevis på tidens gång. <br><br> Med åren får varje föremål en patina som berättar en egen historia – formad av platsen och människorna som använt det. Det är detta som ger våra produkter ett känslomässigt värde, långt bortom deras praktiska användning. När du håller i våra handtag, håller du i något som skapats för att vara med dig länge och bli en del av ditt hem och din historia."
         imageSrc="https://firebasestorage.googleapis.com/v0/b/banga-site.appspot.com/o/Ma%CC%88ssing.jpg?alt=media&token=f09539e4-3880-4b18-b948-04f6062c0488"
       />
-      <ContentFeature 
+      <ContentFeatureRight 
         headline="Beställningsvaror utan slöseri"
         text="Vi utmanar traditionella konsumtionsmönster och produktionsmetoder genom att endast tillverka på beställning. Det gör att vi kan undvika överproduktion och onödigt slöseri med resurser. Genom att fokusera på kvalitet framför kvantitet bidrar vi till ett mer hållbart sätt att tänka kring konsumtion – där varje föremål är tänkt att hålla, användas och älskas över tid.<br><br>
 
@@ -79,7 +100,7 @@ Eftersom vi inte lagerför varor och varje handtag och knopp gjuts på beställn
         ]}
       />
 
-<h2 className="text-4xl font-serif text-gray-800 text-center mt-20">Våra produkter</h2>
+<h2 className="text-4xl font-serif text-gray-800 text-center mt-12">Våra produkter</h2>
 
 <section id="skålhandtag"/>
 <ProductPresentation
@@ -149,7 +170,7 @@ Den obehandlade ytan låter materialets naturliga skönhet komma fram, där tide
   ]}
   productName="Bygelhandtag"
   price="630 kr"
-  description="Vårt bygelhandtag med robust och tidlös design kännetecknas av sina klassiska hjärtformade fästen och slanka, avlånga form. Handtaget är tillverkat för att hålla i generationer och kommer patineras naturligt över tid med daglig användning."
+  description="Vårt bygelhandtag, med sina karaktäristiska hjärtformade fästen och slanka, avlånga design, kombinerar klassisk estetik med praktisk funktion. Det är särskilt lämpligt för högre skåp eller dörrar där ett stadigt grepp behövs för att öppna och stänga med lätthet. Tillverkat i återvunnen mässing, tenn eller brons, åldras handtaget naturligt och får med tiden en unik patina som gör varje exemplar personligt och levande. "
   details={[
     { label: 'Längd', value: '~ 221 mm' },
     { label: 'Material', value: 'Återvunnen mässing, tenn eller brons' },
@@ -179,7 +200,7 @@ Den obehandlade ytan låter materialets naturliga skönhet komma fram, där tide
 
 
 <Footer/>
-    </>
+    </main>
   );
 }
 

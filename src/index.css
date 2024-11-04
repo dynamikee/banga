@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');*/
 
 @tailwind base;
 @tailwind components;
@@ -6,8 +6,53 @@
 
 
 @font-face {
+  font-family: 'Optima';
+  src: url('/fonts/Optima-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Optima';
+  src: url('/fonts/Optima-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
   font-family: 'Avenir Next Condensed';
-  src: url('/path-to-your-font/AvenirNextCondensed-DemiBold.ttf') format('truetype');
+  src: url('/fonts/AvenirNextCondensed-DemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  src: url('/fonts/AvenirNextCondensed-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Optima', sans-serif; /* Global text font */
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Heading Styles using Optima */
+h1, h2 {
+  font-family: 'Optima', sans-serif !important;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-family: 'Avenir Next Condensed', sans-serif;
+  font-weight: 600; /* Demi Bold */
+  font-size: 20px;
+  letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .font-avenir {
@@ -16,7 +61,7 @@
 
 .label-large {
   font-family: 'Avenir Next Condensed', sans-serif;
-  font-weight: 540; /* Demi Bold */
+  font-weight: 600; /* Demi Bold */
   font-size: 20px;
   letter-spacing: 2px;
     text-transform: uppercase;
@@ -25,7 +70,7 @@
 .label-small-prominent {
   font-family: 'Avenir Next Condensed', sans-serif;
   font-size: 14px;
-  font-weight: 540; /* Demi Bold */
+  font-weight: 600; /* Demi Bold */
   text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -39,9 +84,9 @@
 }
 
 .custom-quote {
-  font-family: 'Source Serif Pro', serif;
+  font-family: 'Optima', sans-serif; /* Fall back to regular Optima if italic doesn't load */
+  font-style: italic; /* Ensures italic styling */
   font-size: 1.5rem;  /* Adjust as needed */
-  font-style: normal; /* Keeps the italic style */
 }
 
 .sticky {
@@ -102,8 +147,5 @@
     --ring: 216 12.2% 83.9%;
   }
 
-  /* Apply AvenirNextCondensed font to body */
-  body {
-    @apply bg-background text-foreground font-sans;
-  }
+
 }

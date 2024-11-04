@@ -21,9 +21,9 @@ const ProductPresentation: React.FC<ProductPresentationProps> = ({ images, produ
       <div className="col-span-1">
         <hr className="border-t border-black mb-6" /> {/* Strecket går hela vägen */}
         <div className="pl-4 pr-4">  {/* Indrag med 16px på både vänster och höger */}
-          <h2 className="label-large text-xl mb-2">{productName}</h2>
+          <h3 className="label-large text-xl mb-2">{productName}</h3>
           <div
-            className="text-sm leading-relaxed mb-4"
+            className="text-lg leading-relaxed mb-4"
             dangerouslySetInnerHTML={{ __html: description }}
           />
           {/* Flytta priset direkt under beskrivningen */}

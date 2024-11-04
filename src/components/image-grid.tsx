@@ -47,7 +47,7 @@ const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
   }, []);
 
   return (
-    <div className="grid grid-cols-2" style={{ gap: `${spacing}px` }}> {/* Set gap dynamically */}
+    <div className="grid grid-cols-2 mb-16" style={{ gap: `${spacing}px` }}> {/* Set gap dynamically */}
       {/* Left image */}
       <div className="col-span-1">
         <img
