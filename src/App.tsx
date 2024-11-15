@@ -181,6 +181,16 @@ Den obehandlade ytan låter materialets naturliga skönhet komma fram, där tide
   ]}
 />
 
+<TextAction
+  title="Enligt dina önskemål"
+  text="Vi älskar dialogen om hållbarhet, inredning och byggnadsvård. Vi hjälper gärna till med de utmaningar du kan stöta på längs vägen – vare sig det gäller restaurering, underhåll eller att skapa något nytt.
+
+Vi är ett litet gjuteri som gör allt på plats och kan gjuta efter dina önskemål. Kanske har du historiska föremål du vill återskapa eller anpassningar av ytskikt för att spegla just ditt unika projekt.<br /><br />
+
+Hör av dig, berätta om dina idéer, så skapar vi tillsammans hållbara produkter som passar just din miljö."
+  buttonText="Kontakta oss"
+/>
+
       <ImageGrid
         images={[
           {
